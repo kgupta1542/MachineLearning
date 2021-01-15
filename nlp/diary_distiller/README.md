@@ -1,0 +1,5 @@
+The main repository for the application that used this model, Diary Distiller, can be found at: https://github.com/Franktheknight/QP-Team-10.
+
+ Since this model was being used for matching people's diary entries to show similarities, it was important that we didn't simply classify <i>which</i> emotions were present. Because of this, it was designed as a regression model for sentiment analysis, providing a value between 0 and 1 for our defined emotional specturms (happy-sad and satisfaction-disgust).
+ 
+ After testing different model architectures using Embeddings, LSTMs, and BERT, we found that the Embedding (with global pooling) provided the best results for our limited dataset. The largest difficulty and inadequacy of this project is the dataset upon which the model was trained. Almost all sentiment analysis models are built on the premise of classification, and even the more robust ones classify into multiple emotions instead of focusing on a dichotomy. Due to this, our regression model was able to ascertain good, but not great levels of accuracy on testing data.
